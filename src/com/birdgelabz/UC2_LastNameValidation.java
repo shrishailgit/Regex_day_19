@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class LastName {
+public class UC2_LastNameValidation {
     public static void main(String[] args) {
     
     	//^[A-Z][a-zA-Z]{3,}(?: [A-Z][a-zA-Z]*){0,2}$
@@ -18,12 +18,12 @@ public class LastName {
     	String patternname = "^[a-z][a-zA-Z]{2,}[A-Z]{3}$";
         Pattern regex = Pattern.compile(patternname);
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the first name : ");
+        System.out.print("Enter the last name : ");
         String lastnameStr = sc.nextLine();
         Matcher lastNameMatches = regex.matcher(lastnameStr);
        
         if (lastNameMatches.matches()) {
-            System.out.println(lastnameStr + " is valid Last Name.");
+            System.out.println(lastnameStr + " is valid Last Name");
         } else {
             System.out.println(lastnameStr + " is invalid Last Name ");
         }
