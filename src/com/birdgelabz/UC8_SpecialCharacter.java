@@ -10,9 +10,9 @@ public class UC8_SpecialCharacter {
 		
 		
 		
-		String oneuppercasevalidation = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]){1}.{0,}$";
+		String specialcharactervalidation = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]){1}.{0,}$";
 		
-		Pattern regex = Pattern.compile(oneuppercasevalidation);
+		Pattern regex = Pattern.compile(specialcharactervalidation);
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter password: ");
         String Validpassword = scanner.nextLine();
